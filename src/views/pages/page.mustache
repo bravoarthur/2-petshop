@@ -1,29 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PetShop - The petshop Arthur</title>
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" type="image/png" href="images/favicon.png" />
-</head>
-<body>
-<header>
-    <div class="container">
-        <a href="">PetShop</a>
-        <form method="GET" action="">
-            <input type="search" name="q" placeholder="Pesquise por raça" />
-        </form>
-    </div>
-</header>
-<nav>
-    <ul>
-        <li class="active"><a href="">All</a></li>
-        <li class=""><a href="">Dogs</a></li>
-        <li class=""><a href="">Cats</a></li>
-        <li class=""><a href="">Fish</a></li>
-    </ul>
-</nav>
+{{>partials/header}}
+
 <section class="banner" style="background-image: url('images/allanimals.jpg')">All Animals</section>
 <h2>All Animals available for adoption</h2>
 
@@ -132,8 +108,4 @@
     </div>
 </div>
 
-<footer class="container">
-    Arthur Bravo Dev
-</footer>
-</body>
-</html>
+{{>partials/footer}}
