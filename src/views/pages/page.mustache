@@ -6,13 +6,22 @@
 {{/banner}}
 
 <div class="container list">
+{{#list}}
+
     <div class="item">
-        <img src="images/pastor-alemao.jpg" class="item--image" />
-        <div class="item--name">German Shepherd</div>
-        <div class="item--color">Color: Yellow e Black</div>
-        <div class="item--genre">Gender: Male</div>
+        <img src="images/{{image}}" class="item--image" />
+        <div class="item--name">{{name}}</div>
+        <div class="item--color">Color: {{color}}</div>
+        <div class="item--genre">Gender: {{sex}}</div>
     </div>
     
+{{/list}}
 </div>
+
+{{^list}}
+    <div class = 'container no-list'>
+        <h2> There's no animal with this name </h2>
+    </div>
+{{/list}}
 
 {{>partials/footer}}
